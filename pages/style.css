@@ -73,7 +73,7 @@ color:rgb(7, 8, 12);
 display:flexbox;
 text-align: center;
 justify-content:center;
-margin-left:12px;
+margin-left:15px;
  border:3px solid blue;   
  box-shadow:3px 3px 10px 10px rgb(108, 106, 106) ;      
 }
