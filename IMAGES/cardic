@@ -1,0 +1,1424 @@
+	<!DOCTYPE html>
+	<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"48a86682d3",applicationID:"472993573"};;/*! For license information please see nr-loader-rum-1.263.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={2983:(e,t,r)=>{"use strict";r.d(t,{D0:()=>m,gD:()=>y,Vp:()=>s,fr:()=>S,jD:()=>j,hR:()=>x,xN:()=>b,x1:()=>c,aN:()=>R,V:()=>I});var n=r(384),i=r(7864);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}var u=r(993);const l=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(2614),f=r(944);const g="[data-nr-mask]",p=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},feature_flags:[],harvest:{tooManyRequestsDelay:60},jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},logging:{enabled:!0,harvestTimeSeconds:10,autoStart:!0,level:u.p_.INFO},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){l(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){l(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},ssl:void 0}},h={},v="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(v);if(!h[e])throw new Error("Configuration for ".concat(e," was never set"));return h[e]}function b(e,t){if(!e)throw new Error(v);h[e]=(0,i.a)(t,p());const r=(0,n.nY)(e);r&&(r.init=h[e])}function y(e,t){if(!e)throw new Error(v);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const w={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function R(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.a)(t,w);const r=(0,n.nY)(e);r&&(r.loader_config=A[e])}const x=(0,n.dV)().o;var E=r(6154),_=r(9324);const N={buildEnv:_.F3,distMethod:_.Xs,version:_.xv,originTime:E.WN},T={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,origin:""+E.gm.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,harvestCount:0,timeKeeper:void 0},k={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!k[e])throw new Error("Runtime for ".concat(e," was never set"));return k[e]}function I(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");k[e]={...(0,i.a)(t,T),...N};const r=(0,n.nY)(e);r&&(r.runtime=k[e])}function j(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},7864:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,xv:()=>n});const n="1.263.0",i="PROD",o="CDN"},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,Vr:()=>d,WN:()=>f,bv:()=>o,gm:()=>a,lT:()=>l,mw:()=>s,sb:()=>u});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===a?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,l=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(i&&window.document.documentMode)),d=!!a.navigator?.sendBeacon,f=Date.now()-(0,n.t)()},4777:(e,t,r)=>{"use strict";r.d(t,{J:()=>o});var n=r(944);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.R)(8);this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.R)(9,e)}}}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>d,x3:()=>u});var n=r(7836),i=r(1478),o=r(3606),a=r(860);const s={};function c(e,t){const r={staged:!1,priority:a.P[t]||0};l(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),g(e,t,!1),s[e].size&&f(e))}function l(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(l(e),!e||!s[e].get(t)||r)return g(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),g(e,r)})))}function g(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];const a=e?n.ee.get(e):n.ee,s=o.i.handlers;if(!a.aborted&&a.backlog&&s){if(r){const e=a.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)p(e[t],r);(0,i.$)(r,(function(e,t){(0,i.$)(t,(function(t,r){r[0].on(e,r[1])}))}))}}a.isolatedBacklog||delete s[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.$)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>u});var n=r(384),i=r(8990),o=r(2983),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),u=function e(t,r){var n={},s={},l={},d=!1;try{d=16===r.length&&(0,o.fr)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=g(n),c=h(e),l=c.length,d=0;d<l;d++)c[d].apply(a,r);var p=m()[s[e]];p&&p.push([f,e,r,a]);return a},get:v,listeners:h,context:g,buffer:function(e,t){const r=m();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!m()[s[e]]},debugId:r,backlog:d?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:d};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function v(t){return l[t]=l[t]||e(f,t)}function m(){return f.backlog}}(void 0,"globalEE"),l=(0,n.Zm)();l.ee||(l.ee=u)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";r.d(t,{DD:()=>c,jT:()=>a,sp:()=>s});var n=r(6154);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n.gm.addEventListener("test",null,e),n.gm.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5284:(e,t,r)=>{"use strict";r.d(t,{t:()=>c,B:()=>s});var n=r(7836),i=r(6154);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i.gm.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const i=n?.leading||!1;let o;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];i&&void 0===o&&(e.apply(t,a),o=setTimeout((()=>{o=clearTimeout(o)}),r)),i||(clearTimeout(o),o=setTimeout((()=>{e.apply(t,a)}),r))}}function i(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,i=new Array(n),o=0;o<n;o++)i[o]=arguments[o];e.apply(t,i)}}}r.d(t,{J:()=>i,s:()=>n})},1478:(e,t,r)=>{"use strict";r.d(t,{$:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>l,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>u,pV:()=>d});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function l(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3434:(e,t,r)=>{"use strict";r.d(t,{YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];l(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return l(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,l,d;try{a=this,o=[...arguments],l="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],l],e)}i(r+"start",[o,a,s],l,c);try{return d=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],l,c),e}finally{i(r+"end",[o,a,d],l,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function l(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},993:(e,t,r)=>{"use strict";r.d(t,{ET:()=>o,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o="log";n.K.logging},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>a,z_:()=>o});const n=r(860).K.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{G4:()=>i});var n=r(2614);r(860).K.sessionReplay;const i={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"};n.g.ERROR,n.g.FULL,n.g.OFF},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(7836);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2266:(e,t,r)=>{"use strict";r.d(t,{j:()=>k});var n=r(860),i=r(2983),o=r(9908),a=r(7836),s=r(1687),c=r(5289),u=r(6154),l=r(944),d=r(3969),f=r(384),g=r(6344);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",g.G4.RECORD,g.G4.PAUSE,"log","wrapLogger"],h=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(1863),m=r(2614),b=r(993);var y=r(2646),w=r(3434);function A(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const i=function(e){return(e||a.ee).get("logger")}(e),o=(0,w.YM)(i),s=new y.y(a.P);return s.level=n.level,s.customAttributes=n.customAttributes,o.inPlace(t,[r],"wrap-logger-",s),i}function R(){const e=(0,f.pV)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.api?e.exposed&&e.api[t]&&o.push(e.api[t](...n)):(0,l.R)(38,t)})),o.length>1?o:o[0]}(t,...n)}}))}const x={};function E(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.Ak)(e,"api");const p={};var y=a.ee.get(e),w=y.get("tracer");x[e]=m.g.OFF,y.on(g.G4.REPLAY_RUNNING,(t=>{x[e]=t}));var R="api-",E=R+"ixn-";function _(t,r,n,o){const a=(0,i.Vp)(e);return null===r?delete a.jsAttributes[t]:(0,i.x1)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),k(R,n,!0,o||null===r?"session":void 0)(t,r)}function N(){}p.log=function(e){let{customAttributes:t={},level:r=b.p_.INFO}=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};(0,o.p)(d.xV,["API/log/called"],void 0,n.K.metrics,y),function(e,t){let r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},i=arguments.length>3&&void 0!==arguments[3]?arguments[3]:b.p_.INFO;(0,o.p)(d.xV,["API/logging/".concat(i.toLowerCase(),"/called")],void 0,n.K.metrics,e),(0,o.p)(b.ET,[(0,v.t)(),t,r,i],void 0,n.K.logging,e)}(y,e,t,r)},p.wrapLogger=function(e,t){let{customAttributes:r={},level:i=b.p_.INFO}=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};(0,o.p)(d.xV,["API/wrapLogger/called"],void 0,n.K.metrics,y),A(y,e,t,{customAttributes:r,level:i})},h.forEach((e=>{p[e]=k(R,e,!0,"api")})),p.addPageAction=k(R,"addPageAction",!0,n.K.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.fr)(e).customTransaction=(r||"http://custom.transaction")+t,k(R,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return _(e,t,"setCustomAttribute",r);(0,l.R)(40,typeof t)}else(0,l.R)(39,typeof e)},p.setUserId=function(e){if("string"==typeof e||null===e)return _("enduser.id",e,"setUserId",!0);(0,l.R)(41,typeof e)},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return _("application.version",e,"setApplicationVersion",!1);(0,l.R)(42,typeof e)},p.start=()=>{try{(0,o.p)(d.xV,["API/start/called"],void 0,n.K.metrics,y),y.emit("manual-start-all")}catch(e){(0,l.R)(23,e)}},p[g.G4.RECORD]=function(){(0,o.p)(d.xV,["API/recordReplay/called"],void 0,n.K.metrics,y),(0,o.p)(g.G4.RECORD,[],void 0,n.K.sessionReplay,y)},p[g.G4.PAUSE]=function(){(0,o.p)(d.xV,["API/pauseReplay/called"],void 0,n.K.metrics,y),(0,o.p)(g.G4.PAUSE,[],void 0,n.K.sessionReplay,y)},p.interaction=function(e){return(new N).get("object"==typeof e?e:{})};const T=N.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(d.xV,["API/createTracer/called"],void 0,n.K.metrics,y),f||(0,o.p)(E+"tracer",[(0,v.t)(),e,r],i,n.K.spa,y),function(){if(w.emit((a?"":"no-")+"fn-start",[(0,v.t)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw w.emit("fn-err",[arguments,this,t],r),t}finally{w.emit("fn-end",[(0,v.t)()],r)}}}};function k(e,t,r,i){return function(){return(0,o.p)(d.xV,["API/"+t+"/called"],void 0,n.K.metrics,y),i&&(0,o.p)(e+t,[(0,v.t)(),...arguments],r?null:this,i,y),r?void 0:this}}function S(){r.e(296).then(r.bind(r,8778)).then((t=>{let{setAPI:r}=t;r(e),(0,s.Ze)(e,"api")})).catch((e=>{(0,l.R)(27,e),y.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{T[e]=k(E,e,void 0,f?n.K.softNav:n.K.spa)})),p.setCurrentRouteName=f?k(E,"routeName",void 0,n.K.softNav):k(R,"routeName",!0,n.K.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(d.xV,["API/noticeError/called"],void 0,n.K.metrics,y),(0,o.p)("err",[t,(0,v.t)(),!1,r,!!x[e]],void 0,n.K.jserrors,y)},u.RI?(0,c.GG)((()=>S()),!0):S(),p}var _=r(5284);const N=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let T=!1;function k(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=arguments.length>2?arguments[2]:void 0,n=arguments.length>3?arguments[3]:void 0,{init:o,info:a,loader_config:s,runtime:c={loaderType:r},exposed:l=!0}=t;const d=(0,f.pV)();a||(o=d.init,a=d.info,s=d.loader_config),(0,i.xN)(e.agentIdentifier,o||{}),(0,i.aN)(e.agentIdentifier,s||{}),a.jsAttributes??={},u.bv&&(a.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,a);const g=(0,i.D0)(e.agentIdentifier),p=[a.beacon,a.errorBeacon];T||(g.proxy.assets&&(N(g.proxy.assets),p.push(g.proxy.assets)),g.proxy.beacon&&p.push(g.proxy.beacon),R(),(0,f.US)("activatedFeatures",_.B),e.runSoftNavOverSpa&&=!0===g.soft_navigations.enabled&&g.feature_flags.includes("soft_nav")),c.denyList=[...g.ajax.deny_list||[],...g.ajax.block_internal?p:[]],c.ptid=e.agentIdentifier,(0,i.V)(e.agentIdentifier,c),void 0===e.api&&(e.api=E(e.agentIdentifier,n,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=l),T=!0}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{K:()=>n,P:()=>i});const n={ajax:"ajax",jserrors:"jserrors",logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.spa]:5,[n.ajax]:6,[n.sessionTrace]:7,[n.pageAction]:8,[n.softNav]:9,[n.sessionReplay]:10,[n.logging]:11}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.263.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.263.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),l=0;l<u.length;l++){var d=u[l];if(d.getAttribute("src")==r||d.getAttribute("data-webpack")==t+o){s=d;break}}if(!s){c=!0;var f={296:"sha512-TBs8pRY/W1e4YzgroQONE2LdGjV5O7juw1SF7NvOnee+rj/znproh6CPX2kHL0dyqMqLl4mpTclA+3nAiAWZaQ=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={840:0,374:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.263.0.PROD"]=self["webpackChunk:NRBA-1.263.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566),n=i(7836);class o{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.LA)(16);this.agentIdentifier=e,this.ee=n.ee.get(e)}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}log(e,t){return this.#e("logInfo",e,t)}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var a=i(860),s=i(2983);const c=Object.values(a.K);function u(e){const t={};return c.forEach((r=>{t[r]=function(e,t){return!0===(0,s.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var l=i(2266);var d=i(1687),f=i(4234),g=i(5289),p=i(6154);const h=e=>p.RI&&!0===(0,s.gD)(e,"privacy.cookies_enabled");function v(e){return!!s.hR.MO&&h(e)&&!0===(0,s.gD)(e,"session_trace.enabled")}var m=i(6389);class b extends f.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,s.gD)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.Ak)(e,r):this.ee.on("manual-start-all",(0,m.J)((()=>{(0,d.Ak)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if(h(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(296).then(i.bind(i,2987));n=e(this.agentIdentifier)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===a.K.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.Ze)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(296).then(i.bind(i,6103)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.R)(34,r),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};p.RI?(0,g.GG)((()=>n()),!0):n()}#t(e,t){switch(e){case a.K.sessionReplay:return v(this.agentIdentifier)&&!!t;case a.K.sessionTrace:return!!t;default:return!0}}}var y=i(6630);class w extends b{static featureName=y.T;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,y.T,r),this.importAggregator()}}var A=i(4777),R=i(1478);class x extends A.J{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,R.$)(e,(function(e,r){t[e]=E(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,R.$)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=E(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=_(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=E(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function E(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=_(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function _(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var N=i(384);var T=i(9908),k=i(2843),S=i(3878),I=i(782),j=i(1863);class O extends b{static featureName=I.T;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.T,r),p.RI&&((0,k.u)((()=>(0,T.p)("docHidden",[(0,j.t)()],void 0,I.T,this.ee)),!0),(0,S.sp)("pagehide",(()=>(0,T.p)("winPagehide",[(0,j.t)()],void 0,I.T,this.ee))),this.importAggregator())}}var P=i(3969);class D extends b{static featureName=P.TZ;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.TZ,r),this.importAggregator()}}new class extends o{constructor(t,r){super(r),p.gm?(this.sharedAggregator=new x({agentIdentifier:this.agentIdentifier}),this.features={},(0,N.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(w),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===a.K.softNav)),(0,l.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=u(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>a.P[e.featureName]-a.P[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==a.K.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===a.K.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===a.K.softNav)return;(function(e){switch(e){case a.K.ajax:return[a.K.jserrors];case a.K.sessionTrace:return[a.K.ajax,a.K.pageViewEvent];case a.K.sessionReplay:return[a.K.sessionTrace];case a.K.pageViewTiming:return[a.K.pageViewEvent];default:return[]}})(r.featureName).every((e=>e in this.features))||(0,e.R)(36,r.featureName),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,N.Zm)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[w,O,D],loaderType:"lite"})})()})();</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+		
+		<link rel="pingback" href="https://mmi.edu.pk/xmlrpc.php" />
+				<style type="text/css">
+					.heateor_sss_button_instagram span.heateor_sss_svg,a.heateor_sss_instagram span.heateor_sss_svg{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}
+											.heateor_sss_horizontal_sharing .heateor_sss_svg,.heateor_sss_standard_follow_icons_container .heateor_sss_svg{
+							color: #fff;
+						border-width: 0px;
+			border-style: solid;
+			border-color: transparent;
+		}
+					.heateor_sss_horizontal_sharing .heateorSssTCBackground{
+				color:#666;
+			}
+					.heateor_sss_horizontal_sharing span.heateor_sss_svg:hover,.heateor_sss_standard_follow_icons_container span.heateor_sss_svg:hover{
+						border-color: transparent;
+		}
+		.heateor_sss_vertical_sharing span.heateor_sss_svg,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg{
+							color: #fff;
+						border-width: 0px;
+			border-style: solid;
+			border-color: transparent;
+		}
+				.heateor_sss_vertical_sharing .heateorSssTCBackground{
+			color:#666;
+		}
+						.heateor_sss_vertical_sharing span.heateor_sss_svg:hover,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg:hover{
+						border-color: transparent;
+		}
+		@media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}div.heateor_sss_mobile_footer{display:none;}@media screen and (max-width:783px){div.heateor_sss_bottom_sharing .heateorSssTCBackground{background-color:white}div.heateor_sss_bottom_sharing{width:100%!important;left:0!important;}div.heateor_sss_bottom_sharing a{width:20% !important;}div.heateor_sss_bottom_sharing .heateor_sss_svg{width: 100% !important;}div.heateor_sss_bottom_sharing div.heateorSssTotalShareCount{font-size:1em!important;line-height:28px!important}div.heateor_sss_bottom_sharing div.heateorSssTotalShareText{font-size:.7em!important;line-height:0px!important}div.heateor_sss_mobile_footer{display:block;height:40px;}.heateor_sss_bottom_sharing{padding:0!important;display:block!important;width:auto!important;bottom:-2px!important;top: auto!important;}.heateor_sss_bottom_sharing .heateor_sss_square_count{line-height:inherit;}.heateor_sss_bottom_sharing .heateorSssSharingArrow{display:none;}.heateor_sss_bottom_sharing .heateorSssTCBackground{margin-right:1.1em!important}}		</style>
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v23.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Common Heart Conditions Diagnosed by Cardiologists - Memon Medical Institute Hospital</title>
+	<meta name="description" content="When it comes to the heart, seeking the expertise of the top cardiologists in Karachi is essential for accurate diagnosis and effective treatment." />
+	<link rel="canonical" href="https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Common Heart Conditions Diagnosed by Cardiologists - Memon Medical Institute Hospital" />
+	<meta property="og:description" content="When it comes to the heart, seeking the expertise of the top cardiologists in Karachi is essential for accurate diagnosis and effective treatment." />
+	<meta property="og:url" content="https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/" />
+	<meta property="og:site_name" content="Memon Medical Institute Hospital" />
+	<meta property="article:publisher" content="https://www.facebook.com/MMIHospital" />
+	<meta property="article:published_time" content="2023-07-03T13:10:49+00:00" />
+	<meta property="article:modified_time" content="2023-07-03T13:13:15+00:00" />
+	<meta property="og:image" content="https://mmi.edu.pk/wp-content/uploads/2023/07/Common-Heart-Conditions.jpg" />
+	<meta property="og:image:width" content="1162" />
+	<meta property="og:image:height" content="450" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Ovais Hassan" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Ovais Hassan" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="3 minutes" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/amp/" /><meta name="generator" content="AMP for WP 1.0.83"/><link rel="alternate" type="application/rss+xml" title="Memon Medical Institute Hospital &raquo; Feed" href="https://mmi.edu.pk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Memon Medical Institute Hospital &raquo; Comments Feed" href="https://mmi.edu.pk/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Memon Medical Institute Hospital &raquo; Common Heart Conditions Diagnosed by Cardiologists Comments Feed" href="https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/feed/" />
+		<link rel="shortcut icon" href="" type="image/x-icon" />
+				<link rel="apple-touch-icon" href="" />
+				<link rel="apple-touch-icon" sizes="120x120" href="" />
+				<link rel="apple-touch-icon" sizes="76x76" href="" />
+				<link rel="apple-touch-icon" sizes="152x152" href="" />
+		<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mmi.edu.pk\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel='stylesheet' id='apply-online-BS-css' href='https://mmi.edu.pk/wp-content/plugins/apply-online/public/css/bootstrap.min.css?ver=2.4.3' media='all' />
+<link rel='stylesheet' id='aol-jquery-ui-css-css' href='https://mmi.edu.pk/wp-content/plugins/apply-online/public/css/jquery-ui.min.css?ver=6.6.1' media='all' />
+<link rel='stylesheet' id='apply-online-css' href='https://mmi.edu.pk/wp-content/plugins/apply-online/public/css/applyonline-public.css?ver=2.4.3' media='all' />
+<link rel='stylesheet' id='sbi_styles-css' href='https://mmi.edu.pk/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.2.1' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://mmi.edu.pk/wp-includes/css/dist/block-library/style.min.css?ver=6.6.1' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<link rel='stylesheet' id='single-testimonial-block-css' href='https://mmi.edu.pk/wp-content/plugins/easy-testimonials/blocks/single-testimonial/style.css?ver=1681674748' media='all' />
+<link rel='stylesheet' id='random-testimonial-block-css' href='https://mmi.edu.pk/wp-content/plugins/easy-testimonials/blocks/random-testimonial/style.css?ver=1681674748' media='all' />
+<link rel='stylesheet' id='testimonials-list-block-css' href='https://mmi.edu.pk/wp-content/plugins/easy-testimonials/blocks/testimonials-list/style.css?ver=1681674748' media='all' />
+<link rel='stylesheet' id='testimonials-cycle-block-css' href='https://mmi.edu.pk/wp-content/plugins/easy-testimonials/blocks/testimonials-cycle/style.css?ver=1681674748' media='all' />
+<link rel='stylesheet' id='testimonials-grid-block-css' href='https://mmi.edu.pk/wp-content/plugins/easy-testimonials/blocks/testimonials-grid/style.css?ver=1681674748' media='all' />
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://mmi.edu.pk/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=9.8.4' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='https://mmi.edu.pk/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=9.8.4' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #1d4886;--wp--preset--color--secondary: #1d4886;--wp--preset--color--tertiary: #1d4886;--wp--preset--color--quaternary: #242424;--wp--preset--color--dark: #2e353e;--wp--preset--color--light: #ffffff;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='dashicons-css' href='https://mmi.edu.pk/wp-includes/css/dashicons.min.css?ver=6.6.1' media='all' />
+<link rel='stylesheet' id='applyonline-email-css' href='https://mmi.edu.pk/wp-content/plugins/applyonline-email/public/css/applyonline-email-public.css?ver=1.5' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://mmi.edu.pk/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.7' media='all' />
+<link rel='stylesheet' id='easy_testimonial_style-css' href='https://mmi.edu.pk/wp-content/plugins/easy-testimonials/include/assets/css/style.css?ver=6.6.1' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='heateor_sss_frontend_css-css' href='https://mmi.edu.pk/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css?ver=3.3.51' media='all' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://mmi.edu.pk/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.5' media='all' />
+<link rel='stylesheet' id='wcplpro_select2_css-css' href='https://mmi.edu.pk/wp-content/plugins/Woocommerce_Products_List_Pro/select2/select2.css?ver=6.6.1' media='all' />
+<link rel='stylesheet' id='wcplpro_css-css' href='https://mmi.edu.pk/wp-content/plugins/Woocommerce_Products_List_Pro/assets/css/wcplpro.css?ver=6.6.1' media='all' />
+<link rel='stylesheet' id='cf7cf-style-css' href='https://mmi.edu.pk/wp-content/plugins/cf7-conditional-fields/style.css?ver=2.3.9' media='all' />
+<link rel='stylesheet' id='__EPYT__style-css' href='https://mmi.edu.pk/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=14.1.6.1' media='all' />
+<style id='__EPYT__style-inline-css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+                         @media (min-width:0px) and (max-width: 767px) {
+                            .epyt-gallery-rowbreak {
+                                display: none;
+                            }
+                            .epyt-gallery-allthumbs[class*="epyt-cols"] .epyt-gallery-thumb {
+                                width: 100% !important;
+                            }
+                          }
+</style>
+<link rel='stylesheet' id='select2cssMMI-css' href='https://mmi.edu.pk/wp-content/themes/porto-child/select2/select2.min.css?ver=1' media='all' />
+<link rel='stylesheet' id='porto-css-vars-css' href='https://mmi.edu.pk/wp-content/uploads/porto_styles/theme_css_vars.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='https://mmi.edu.pk/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.10.0' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://mmi.edu.pk/wp-content/uploads/porto_styles/bootstrap.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='porto-plugins-css' href='https://mmi.edu.pk/wp-content/themes/porto/css/plugins.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='porto-theme-css' href='https://mmi.edu.pk/wp-content/themes/porto/css/theme.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='porto-shortcodes-css' href='https://mmi.edu.pk/wp-content/uploads/porto_styles/shortcodes.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='porto-theme-shop-css' href='https://mmi.edu.pk/wp-content/themes/porto/css/theme_shop.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='porto-theme-wpb-css' href='https://mmi.edu.pk/wp-content/themes/porto/css/theme_wpb.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='porto-dynamic-style-css' href='https://mmi.edu.pk/wp-content/uploads/porto_styles/dynamic_style.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='porto-type-builder-css' href='https://mmi.edu.pk/wp-content/plugins/porto-functionality/builders/assets/type-builder.css?ver=2.8.5' media='all' />
+<link rel='stylesheet' id='porto-account-login-style-css' href='https://mmi.edu.pk/wp-content/themes/porto/css/theme/shop/login-style/account-login.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='porto-style-css' href='https://mmi.edu.pk/wp-content/themes/porto/style.css?ver=6.8.5' media='all' />
+<style id='porto-style-inline-css'>
+.side-header-narrow-bar-logo{max-width:320px}@media (min-width:992px){}#header .header-main .header-left,#header .header-main .header-center,#header .header-main .header-right,.fixed-header #header .header-main .header-left,.fixed-header #header .header-main .header-right,.fixed-header #header .header-main .header-center,.header-builder-p .header-main{padding-top:0;padding-bottom:0}@media (max-width:991px){#header .header-main .header-left,#header .header-main .header-center,#header .header-main .header-right,.fixed-header #header .header-main .header-left,.fixed-header #header .header-main .header-right,.fixed-header #header .header-main .header-center,.header-builder-p .header-main{padding-top:0;padding-bottom:0}}body.single-product .page-top .breadcrumbs-wrap{padding-right:55px}#login-form-popup{max-width:480px}#header.sticky-header .main-menu > li.menu-item > a{color:#fff}#header.sticky-header .main-menu > li.menu-item > a.current{color:#fff}.aol_app_form_23736{display:none}.postid-23736 .aol-heading{display:none}.doctor-by-cat-left > h3{margin-bottom:10px;margin-top:10px;color:white}.doctor-by-cat-left ::marker{color:white}.doctor-by-cat-left > p{color:white}.doctor-by-cat-left > p > span{color:white!important}.doctor-by-cat-left > ul > li{color:white!important}.doctor-by-cat-left > ul > li{color:white!important}.doctor-by-cat-left > ul > li > span{color:white!important}.doctor-by-cat-left > h4{margin-bottom:10px;margin-top:10px;color:white}.doctor-by-cat-left > h4{margin-bottom:10px;margin-top:10px;color:white}.doctor-info-box .fee{display:none}.book-appointment-area .fee{display:none}
+</style>
+<link rel='stylesheet' id='styles-child-css' href='https://mmi.edu.pk/wp-content/themes/porto-child/style.css?ver=6.6.1' media='all' />
+<script src="https://mmi.edu.pk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://mmi.edu.pk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://mmi.edu.pk/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script src="https://mmi.edu.pk/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3" id="jquery-ui-datepicker-js"></script>
+<script id="jquery-ui-datepicker-js-after">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script id="apply-online-js-extra">
+var aol_public = {"ajaxurl":"https:\/\/mmi.edu.pk\/wp-admin\/admin-ajax.php","date_format":"dd-mm-yy","url":"https:\/\/mmi.edu.pk\/wp-content\/plugins\/apply-online"};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/apply-online/public/js/applyonline-public.js?ver=2.4.3" id="apply-online-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/applyonline-email/public/js/applyonline-email-public.js?ver=1.5" id="applyonline-email-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/Woocommerce_Products_List_Pro/select2/select2.min.js?ver=6.6.1" id="wcplpro_select2_js-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/Woocommerce_Products_List_Pro/assets/js/stupidtable.js?ver=6.6.1" id="wcplpro_table_sort-js"></script>
+<script id="wcplpro_js-js-extra">
+var wcplprovars = {"ajax_url":"https:\/\/mmi.edu.pk\/wp-admin\/admin-ajax.php","cart_url":"https:\/\/mmi.edu.pk\/checkout\/","currency_symbol":"\u20a8","thousand_separator":",","decimal_separator":".","decimal_decimals":"2","currency_pos":"left","price_display_suffix":"","wcplpro_ajax":"0"};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/Woocommerce_Products_List_Pro/assets/js/wcplpro.js?ver=6.6.1" id="wcplpro_js-js"></script>
+<script id="__ytprefs__-js-extra">
+var _EPYT_ = {"ajaxurl":"https:\/\/mmi.edu.pk\/wp-admin\/admin-ajax.php","security":"57f3759162","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/mmi.edu.pk\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/mmi.edu.pk\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs__\",\"iframe[src*='youtube.com']\",\"iframe[src*='youtube-nocookie.com']\",\"iframe[data-ep-src*='youtube.com']\",\"iframe[data-ep-src*='youtube-nocookie.com']\",\"iframe[data-ep-gallerysrc*='youtube.com']\"]","epdovol":"1","version":"14.1.6.1","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","maxres_facade":"eager","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"","not_live_on_channel":"","vi_active":"","vi_js_posttypes":[]};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=14.1.6.1" id="__ytprefs__-js"></script>
+<script src="https://mmi.edu.pk/wp-content/themes/porto-child/select2/select2.min.js?ver=1" id="select2jsMMI-js"></script>
+<script id="easy-testimonials-reveal-js-extra">
+var easy_testimonials_reveal = {"show_less_text":"Show Less"};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/easy-testimonials/include/assets/js/easy-testimonials-reveal.js?ver=6.6.1" id="easy-testimonials-reveal-js"></script>
+<link rel="https://api.w.org/" href="https://mmi.edu.pk/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://mmi.edu.pk/wp-json/wp/v2/posts/55368" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mmi.edu.pk/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.1" />
+<meta name="generator" content="WooCommerce 7.6.0" />
+<link rel='shortlink' href='https://mmi.edu.pk/?p=55368' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://mmi.edu.pk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmmi.edu.pk%2Fblog%2Fcommon-heart-conditions-diagnosed-by-cardiologists%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://mmi.edu.pk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmmi.edu.pk%2Fblog%2Fcommon-heart-conditions-diagnosed-by-cardiologists%2F&#038;format=xml" />
+<style type="text/css" media="screen"></style><style type="text/css" media="screen">@media (max-width: 728px) {}</style><style type="text/css" media="screen">@media (max-width: 320px) {}</style><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD7HJMT');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '629534261215666');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=629534261215666&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<link rel="alternate" href="https://mmi.edu.pk/" hreflang="en-pk" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "name": "Memon Medical Institute Hospital",
+  "image": "https://mmi.edu.pk/wp-content/uploads/2019/10/MMI-Logo-1.png",
+  "@id": "https://mmi.edu.pk/",
+  "url": "https://mmi.edu.pk/",
+  "telephone": "+92 21 34691147",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hyder Buksh Gabol Road Safoora، Chowrangi",
+    "addressLocality": "Karachi",
+    "postalCode": "75270",
+    "addressCountry": "PK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 24.9914601,
+    "longitude": 67.2824862
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://www.facebook.com/MMIHospital/",
+    "https://mobile.twitter.com/mmi_pk",
+    "https://www.youtube.com/channel/UCYmcc5-pMLl-eVxuvS0v_2A"
+  ] 
+}
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="/wp-content/themes/porto-child/bootstrap-glyphicons.css" rel="stylesheet" />
+    <link rel='stylesheet'  href='https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css' type='text/css' media='all' />
+    		<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Poppins:400,500,600,700,800','Shadows+Into+Light:400,700','Open+Sans:400,500,600,700,800' ] }
+		};
+		(function(d) {
+			var wf = d.createElement('script'), s = d.scripts[d.scripts.length - 1];
+			wf.src = 'https://mmi.edu.pk/wp-content/themes/porto/js/libs/webfont.js';
+			wf.async = true;
+			s.parentNode.insertBefore(wf, s);
+		})(document);</script>
+			<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 6.6.12 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://mmi.edu.pk/wp-content/uploads/2019/10/MMI-Logo-1-50x50.png" sizes="32x32" />
+<link rel="icon" href="https://mmi.edu.pk/wp-content/uploads/2019/10/MMI-Logo-1.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://mmi.edu.pk/wp-content/uploads/2019/10/MMI-Logo-1.png" />
+<meta name="msapplication-TileImage" content="https://mmi.edu.pk/wp-content/uploads/2019/10/MMI-Logo-1.png" />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+		<style id="wp-custom-css">
+			
+.single-post .owl-carousel .owl-stage,  .single-post .owl-carousel.owl-drag .owl-item,
+.blog-posts article.post-grid 
+.owl-carousel .owl-stage, .blog-posts article.post-grid .owl-carousel.owl-drag .owl-item {
+	width:100% !important;
+}
+	.fd-dr-note .fd-dr-note-col div.wpb_single_image > div  {
+	width:40px;
+	margin-right:15px
+}
+.fd-dr-note .fd-dr-note-col div {
+	margin-bottom:0;
+}
+.fd-dr-note .fd-dr-note-col p {
+    font-family: Poppins,sans-serif;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    color: #2c2c2c;
+    font-weight: 600;
+}
+.fd-dr-note .fd-dr-note-col > div {
+	display:flex;
+}
+.fd-dr-note .fd-dr-note-col {
+	padding:0;
+	
+}
+
+.fd-dr-note {
+	
+    margin: 0 0px;
+	border-radius: 12px !important;
+    border: 1px dashed var(--basecolor1, #1D4886);
+	margin-bottom:30px !important;
+    background: #F0F4FA;       
+	
+}
+
+/* .book-appointment-area .form-section .datetimepicker12  .bootstrap-datetimepicker-widget {
+	position:relative;
+	border:solid 2px red;
+	display:none;
+} */
+.datetimepicker12:after {
+	content: "\f133";
+    font-family: var(--fa-style-family,"Font Awesome 6 Free");
+    font-weight: var(--fa-style,900);
+	display:block;
+	position:absolute;
+	right:10px;
+	top:10px;
+	color:#777;
+	font-size:18px;
+	cursor:none;
+}
+
+.blog-1 .right-sidebar {
+    padding-top: 0;
+}
+.aol-wrapper button.fusion-button {position:relative;}
+.aol-wrapper button.fusion-button:after {content: "Apply Now";display:block;}
+.header-wrapper {
+    height: 80px;
+}
+#header .header-main {
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);	
+}
+
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea, .form-control, select {
+    height: 52px;
+    background-color: #fff;
+    color: #3d3d3d;
+    border-color: #b9b9b9;
+    border-radius: 4px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 10px !important;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.testimonial.testimonial-with-quotes blockquote p {
+    padding: 0;
+	font-size: 18px;
+} 
+
+.no-breadcrumbs .main-content {
+    padding-top: 0;
+}
+
+.testimonial.testimonial-with-quotes blockquote:before, .testimonial.testimonial-with-quotes blockquote:after{
+	display: none !important;
+}
+
+.testimonial.testimonial-with-quotes.testimonial-light blockquote {
+    color: #2c2c2c;
+}
+
+.testimonial.testimonial-with-quotes.testimonial-light .testimonial-author strong {
+    color: #2c2c2c;
+	opacity: 1;
+}
+
+#footer .footer-main input[type="email"] {
+		width: 90%;
+    background: transparent;
+    border-color: #fff;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer input[type="submit"] {
+    border: 0px solid #fff;
+    color: #2c2c2c;
+    padding: 8px 20px;
+    line-height: 1.42857;
+    border-radius: 2px;
+    margin-top: 10px;
+	background: #fff !important;
+}
+
+.widget_recent_entries>ul li:before, .widget_recent_comments>ul li:before, .widget_pages>ul li:before, .widget_meta>ul li:before, .widget_nav_menu>div>ul li:before, .widget_archive>ul li:before, .widget_categories>ul li:before, .widget_rss>ul li:before, .wp-block-categories-list li:before, .wp-block-archives-list li:before, .wp-block-latest-posts li:before{
+	display: none !important;
+}
+
+#footer .widget > div > ul, #footer .widget > ul, #footer .widget > div > ul li, #footer .widget > ul li, #footer .post-item-small {
+	border: 0px;
+}
+
+
+.widget_recent_entries>ul li, .widget_recent_comments>ul li, .widget_pages>ul li, .widget_meta>ul li, .widget_nav_menu>div>ul li, .widget_archive>ul li, .widget_categories>ul li, .widget_rss>ul li, .wp-block-categories-list li, .wp-block-archives-list li, .wp-block-latest-posts li {
+    padding: 0;
+}
+#footer .widget-title{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #fff;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+#searchform #s {
+    font-size: 0.8em;
+    background: transparent;
+    color: #fff !important;
+    border-radius: 5px 0px 0px 5px;
+	border: 1px solid #fff;
+	border-right: 0px;
+} 
+#searchform .btn-dark {
+    color: #ffffff;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    border: 1px solid #fff !important;
+    border-left: 0px !important;
+	border-radius: 0px 5px 5px 0px;
+} 
+
+.main-content {
+    padding-bottom: 0;
+	padding-top: 0px;
+} 
+
+html .btn-primary {
+    color: #ffffff;
+    background-color: #d8d8d8;
+    border-color: #d8d8d8;
+    padding: 20px 20px !important;
+    border-radius: 3px;
+}
+
+#header.sticky-header .header-main.sticky .header-left {
+    width: 30%;
+}
+#header.sticky-header .header-main.sticky .header-left
+.logo {
+	width:100%;
+	display:contents;
+}
+#header.sticky-header .main-menu > li.menu-item > a {
+	color: #fff !important;
+}
+
+#header .main-menu > li.menu-item.active > a {
+    background-color: transparent;
+    color: #1d4886;
+    border-bottom: 2px solid;
+    font-weight: 600;
+}
+
+#header .main-menu > li.menu-item > a {
+	padding: 30px 16px 30px 16px;
+}
+
+.widget .widget-title{
+	color: #1d4886;
+    font-size: 24px;
+    font-weight: 600;
+	text-transform: capitalize;
+}
+
+article.post .post-image.single .owl-carousel .img-thumbnail {
+    max-width: 100%;
+    width: 100%;
+}
+
+.no-breadcrumbs .left-sidebar, .no-breadcrumbs .right-sidebar {
+    padding-top: 0px;
+}
+
+.sidebar-content a{
+	color: #2c2c2c;
+}
+
+.widget input[type="email"], input[type="text"], select{
+	border-radius: 4px;
+  border: 1px solid #c4c4c4 ;
+	margin-bottom: 10px !important;
+	width: 100%;
+    margin: 0px auto;
+}
+
+.sidebar-content .widget input[type="submit"] {
+	width: 100%;
+}
+
+
+.sidebar-content .widget input[type="email"], input[type="text"] {
+   
+ margin: 0px auto !important;
+	margin-bottom: 10px !important;
+} 
+
+.give-donation-amount{
+	margin-bottom: 10px !important;
+}
+
+
+.give-default-level {
+    background: transparent;
+    border: 2px solid #1d4886 !important;
+    color: #1d4886 !important;
+    padding: 8px 10px;
+    cursor: pointer;
+    line-height: 1.2em;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.give-btn  {
+    background: transparent;
+    border: 2px solid #d3d3d3;
+    color: #d3d3d3;
+    padding: 8px 10px;
+    cursor: pointer;
+    line-height: 1.2em;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.give-btn-reveal {
+	  background: #ffd878;
+    border: 1px solid #ffd878;
+    color: #1d4886;
+}
+
+[id*=give-form] .give-form-title {
+    display: none;
+}
+
+#give-purchase-button {
+	background: #ffd878;
+  border: 1px solid #ffd878;
+  color: #1d4886;
+	font-weight: bold;
+}
+.donate-btn a {
+    background: #1d4886 !important;
+    margin-top: 15px !important;
+    padding: 15px 22px !important;
+    border-radius: 4px !important;
+	color: #fff !important
+}
+
+.sticky .donate-btn a {
+    margin-top: 10px !important;
+   
+}
+
+.serBoxes {
+    background: #F1F1F1;
+    border: 1px #f5f5f5;
+    height: 200px;
+    padding: 10px;
+    width: 46.5%;
+    display: block;
+    float: left;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.serBoxes h2{
+	font-size: 26px;
+}
+
+.woocommerce-tabs{
+    display: none !important;
+}
+.summary-before {
+    display: none;
+}
+
+
+.mCustomScrollbar {
+    height: 600px !important;
+}
+
+.checkout .shop_table tbody {
+	display: none;
+}
+
+.checkout .shop_table thead {
+	display: none;
+}
+
+.woocommerce-billing-fields h3{
+	display: none;
+}
+
+.woocommerce-widget-layered-nav-list a:not(.filter-color), .filter-item-list .filter-item {
+	border-radius: 5px;
+  border: solid 2px #1d4886;
+	padding: 8px 30px;
+	font-size: 16px;
+}
+.single_add_to_cart_button {
+    background: #ffd878;
+	color: #1d4886;
+}
+
+.product-summary-wrap .single_add_to_cart_button:before {
+	display: none;
+}
+
+#place_order{
+	background-color: #ffd878;
+    border-color: #ffd878;
+    color: #1d4886;
+    font-size: 16px !IMPORTANT;
+    padding: 10px 40px !important;
+    font-weight: 600;
+}
+
+.blog-posts .post .entry-title {
+	font-size: 22px;
+	color: #222 !important;
+}
+
+.labtest-title{
+	color: #1d4886;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+
+
+.left-area h4{
+	
+	color: #1d4886 !important;
+	margin-top: 20px !important;
+}
+.timings {
+	font-size: 14px;
+}
+
+.fee{
+	font-size: 14px;
+	display: none;
+}
+
+.doctor-image img {
+    border-radius: 0 !important;
+}
+
+.switch label {
+	font-size: 14px !important;
+}
+
+.doctor-info-box h4 {
+    color: #1d4886 !important;
+    margin: 0 !important;
+    font-family: Poppins,sans-serif !important;
+    line-height: 28px !important;
+}
+
+.doctor-info-box img{
+	margin-top: 10px;
+ width: 100px;
+	height: 100px;
+}
+
+.page-top {
+	margin-bottom: 40px;
+}
+
+.single-post .right-sidebar {
+    padding-top: 0px;
+}
+
+.js-marquee a{
+	color: #ffffff;
+}
+
+.career-title{
+	color:#3d3d3d;
+	margin-bottom: 25px;
+	opacity: 0.5;
+}
+
+.aol-heading {
+	padding: 20px;
+	margin-bottom: 0px;
+	background: #eee;
+	border: 1px solid #ddd;
+}
+
+.aol_app_form{
+	padding: 20px;
+	background: #eee;
+		border: 1px solid #ddd;
+}
+.post-excerpt {
+	font-size: 14px !important;
+}
+
+/* Header */
+#consultantlist .header {
+    background: #F56814;
+}
+#consultantlist td {
+    vertical-align: top;
+    padding: 4px 10px;
+}
+
+#consultantlist .alternate {
+    background: #f1f1f1;
+    border-bottom: 1px #999 solid;
+}
+
+.lm-btn {
+	color: #1d4886;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.serBoxes p{
+	height: 70px;
+}
+ul.products li.product-col .product-image{display: none;
+}
+.quickview {display: none;}
+
+ul.products li.product-col .woocommerce-loop-product__title{
+	font-size: 22px;
+	font-weight: 600;
+	color: #1d4886;
+}
+.qtycol input.input-text.qty.text {
+    margin: 0;
+    height: 30px;
+    margin-top: 10px;
+    background: transparent;
+    text-align: center;
+}
+
+.qtywrap>div {
+    padding: 12px 0;
+}
+.table thead th {
+  border-bottom: 0px solid #ddd;
+}
+.shop_table {
+    border-top: 0px !important;
+}
+.page-image{
+	display: none !important;
+}
+.footer-top {
+    background-color: #f3f6fa !important;
+    padding-top: 40px !important; 
+    padding-bottom: 40px !important;
+}
+
+html .btn-primary {
+    color: #ffffff;
+    background-color: #1d4886;
+    border-color: #1d4886;
+    padding: 17px 40px !important;
+    border-radius: 3px;
+}
+@media only screen and (max-width: 767px) {
+	
+.filter-row .filter-right-col .form-section > div {
+    justify-content: flex-end;
+    gap: 0;
+	}
+	.filter-right-col {
+		padding:0 !important;
+	}
+	.fd-dr-note .fd-dr-note-col div.wpb_single_image > div  {
+		display:none;
+	}
+
+	.header-wrapper {
+			height: 50px;
+	}
+
+	#header.sticky-header .header-main.sticky .header-left {
+			width: 60%;
+	}
+}
+@media (max-width: 575px) {
+	.doctor-info-box{
+		margin-bottom: 20px;
+	}
+.find-a-doctor .row {
+    margin-bottom: 0 !important;
+}
+/* .book-appointment-btn {
+    right: 0 !important;
+    -ms-transform: rotate(360deg)!important;
+    -webkit-transform: rotate(360deg)!important;
+    transform: rotate(360deg) !important;
+    top: 251px!important;
+    width: 100% !important;
+    text-align: center !important;
+}
+	 */
+	html.panel-opened #side-nav-panel{
+		width: 100%;
+	}
+	.mobile-tabs .mobile-tab-items {
+    border-bottom: 2px solid #e8e8e8;
+    display: none;
+	}
+	
+#side-nav-panel .side-nav-panel-close {
+    right: 5px;
+    font-size: 22px;
+	}
+	#side-nav-panel .accordion-menu li.menu-item.active > a, #side-nav-panel .accordion-menu li.menu-item:hover > a, #side-nav-panel .menu-custom-block a:hover {
+    background-color: #1d4886;
+	}
+	#side-nav-panel .accordion-menu{
+		padding-top: 0px;
+	}
+	
+#header .mobile-toggle {
+    color: #1d4886;
+	}
+	#header.sticky-header .mobile-toggle {
+		color:#fff;
+	}
+	
+#side-nav-panel .accordion-menu .arrow {
+	top: 18px;}
+	#side-nav-panel .accordion-menu li.menu-item > a {
+		padding: 12px 20px;
+		padding-right:0;
+		text-align: left;
+    border-bottom: 1px solid #ffffff33;
+		font-size:14px;
+		}
+	#side-nav-panel .accordion-menu li.menu-item:hover {
+		background-color: #1d4886; 
+		color: #fff;
+	}
+	#side-nav-panel .menu-wrap {
+    margin: 15px 0;
+    padding: 0 0px;
+	}
+	
+	.sub-menu{
+		background: #fff;
+	}
+	.sub-menu	li.menu-item > a{
+		border-bottom: 0px !important;
+    font-size: 14px;
+    color: #000 !important;
+    font-weight: 400;
+	}
+
+	.sub-menu .arrow{
+		color: #000 !important;
+	}
+	.accordion-menu ul.sub-menu{
+		padding: 0px;
+	}	
+	#side-nav-panel .sub-menu .accordion-menu li:not(:last-child) {
+    border-bottom-color: transparent;
+}
+}
+
+.wpcf7-text::placeholder {
+    color: #000 !important;
+    opacity: 1;
+}
+
+div.col-md-6.doctor-by-cat-right > h3.availablity {
+ display: none;
+}
+
+div.col-md-6.doctor-by-cat-left > p {
+text-align: justify;
+}
+
+
+
+.credit_cart_button{ color: #1d4886 !important; }
+
+.credit_cart_button:hover{color: #fff !important;}
+
+
+
+		</style>
+		<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>		<!-- for custom css -->
+		<link rel="stylesheet" type="text/css" href="https://mmi.edu.pk/wp-content/themes/porto/assets/css/custom.css?v=1.8" />
+		<link rel="stylesheet" type="text/css" href="https://mmi.edu.pk/wp-content/themes/porto/assets/css/main-style.css?v=1.10" />
+
+		<script src="https://mmi.edu.pk/wp-content/themes/porto/assets/js/main.js"></script>
+		<!-- for custom css -->
+
+		<link rel="profile" href="https://gmpg.org/xfn/11" />
+	</head>
+	<body class="post-template-default single single-post postid-55368 single-format-standard wp-embed-responsive theme-porto 2.4.3 2.4.3-apply-online woocommerce-no-js login-popup full blog-1 wpb-js-composer js-comp-ver-6.10.0 vc_responsive">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD7HJMT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<div class="page-wrapper"><!-- page wrapper -->
+		
+											<!-- header wrapper -->
+				<div class="header-wrapper">
+										
+
+	<header id="header" class="header-builder">
+	
+	<div class="header-main"><div class="header-row container"><div class="header-col header-left">		<div class="logo">
+		<a href="https://mmi.edu.pk/" title="Memon Medical Institute Hospital - Health and Education Foundation"  rel="home">
+		<img class="img-responsive sticky-logo sticky-retina-logo" src="//mmi.edu.pk/wp-content/uploads/2023/01/MMI_Hospital_logo-white.png" alt="Memon Medical Institute Hospital" /><img class="img-responsive standard-logo retina-logo" width="561" height="96" src="//mmi.edu.pk/wp-content/uploads/2023/01/mmi-logo-blue_1.png" alt="Memon Medical Institute Hospital" />	</a>
+			</div>
+		</div><div class="header-col header-right"><ul id="menu-home" class="main-menu mega-menu show-arrow"><li id="nav-menu-item-827" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub narrow"><a href="#">About</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-828" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/about/">About Us</a></li>
+	<li id="nav-menu-item-3930" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/mission-vision-core-values/">Mission, Vision &#038; Aim</a></li>
+	<li id="nav-menu-item-6016" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/ceos-message/">CEO’s Message</a></li>
+	<li id="nav-menu-item-3932" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/board-of-governors/">Board of Governors</a></li>
+	<li id="nav-menu-item-3933" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/office-bearers/">Office Bearers</a></li>
+	<li id="nav-menu-item-3934" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/executive-management-committee/">Executive Management Committee</a></li>
+	<li id="nav-menu-item-3935" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/trustees-memon-health-and-education-foundation/">Trustees Memon Health and Education Foundation</a></li>
+	<li id="nav-menu-item-830" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/friends/">Friends</a></li>
+	<li id="nav-menu-item-3947" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/future-projects/">Future Projects</a></li>
+	<li id="nav-menu-item-5776" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/welfare-department/">Welfare Department</a></li>
+	<li id="nav-menu-item-6150" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/patient-rights/">Patient’s Rights</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-3937" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub narrow"><a href="#">Facilities</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-43969" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/community-health/antenatal-care-program/">Antenatal Care Program</a></li>
+	<li id="nav-menu-item-3936" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/services/">Services</a></li>
+	<li id="nav-menu-item-5374" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/our-specialties/">Specialties</a></li>
+	<li id="nav-menu-item-5202" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/mmi-medical-laboratories/">MMI Hospital Clinical Laboratory</a></li>
+	<li id="nav-menu-item-19599" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/services/radiology/">Radiology</a></li>
+	<li id="nav-menu-item-5203" class="menu-item menu-item-type-custom menu-item-object-custom" data-cols="1"><a target="_blank" href="http://reports.mmi.edu.pk/">Online Lab/Radiology Report</a></li>
+	<li id="nav-menu-item-5768" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/lab-collection-points/">Lab Collection Points/Outreach Centers</a></li>
+	<li id="nav-menu-item-6218" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/feedback/">Give your Feedback</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-3949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub narrow"><a href="#">Latest</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-19453" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/blog/">Blog</a></li>
+	<li id="nav-menu-item-5780" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/corona-virus-our-safety-measures/">Corona Virus &#038; Our Safety Measures</a></li>
+	<li id="nav-menu-item-6231" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/resources-patient-success-stories/">Patient Success Stories</a></li>
+	<li id="nav-menu-item-5805" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/health-awareness/">Health Awareness</a></li>
+	<li id="nav-menu-item-831" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/news-events/">News &#038; Events</a></li>
+	<li id="nav-menu-item-4980" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/gallery/">Gallery</a></li>
+	<li id="nav-menu-item-5574" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/videos/">Videos</a></li>
+	<li id="nav-menu-item-832" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/reports-and-newsletters/">Annual Reports and Newsletters</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-sub narrow"><a href="https://mmi.edu.pk/find-a-doctor/">Doctors</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-19455" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/find-a-doctor/">In-person Appointment</a></li>
+	<li id="nav-menu-item-5738" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/services/online-doctor/">Online Doctor</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-5801" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub narrow"><a href="#">Colleges</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-11995" class="menu-item menu-item-type-custom menu-item-object-custom" data-cols="1"><a href="https://mcon.mmi.edu.pk/">Memon College of Nursing</a></li>
+	<li id="nav-menu-item-8925" class="menu-item menu-item-type-custom menu-item-object-custom" data-cols="1"><a href="https://mcprm.mmi.edu.pk">Memon College of Physical &#038; Rehabilitative Medicine</a></li>
+	<li id="nav-menu-item-5988" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://mmi.edu.pk/residence-program/">Residency Program</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-4334" class="menu-item menu-item-type-post_type menu-item-object-page narrow"><a href="https://mmi.edu.pk/career/">Careers</a></li>
+<li id="nav-menu-item-804" class="donate-btn aaa menu-item menu-item-type-custom menu-item-object-custom narrow"><a href="https://mmi.edu.pk/donate/">Donate</a></li>
+</ul><a class="mobile-toggle" href="#" aria-label="Mobile Menu"><i class="fas fa-bars"></i></a></div></div></div>	</header>
+
+									</div>
+				<!-- end header wrapper -->
+			
+			
+					<section class="page-top page-header-2">
+		<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="">
+				<h1 class="page-title">Common Heart Conditions Diagnosed by Cardiologists</h1>
+							</div>
+								</div>
+	</div>
+</div>
+	</section>
+	
+		<div id="main" class="column2 column2-right-sidebar boxed"><!-- main -->
+
+			<div class="container">
+			<div class="row main-content-wrap">
+
+			<!-- main content -->
+			<div class="main-content col-lg-9">
+
+			
+<div id="content" role="main" class="porto-single-page">
+
+	
+			
+<article class="post-full post-55368 post type-post status-publish format-standard has-post-thumbnail hentry category-blog">
+
+		<div class="post-image single">
+		<div class="post-slideshow porto-carousel owl-carousel has-ccols ccols-1  nav-inside nav-inside-center nav-style-2 show-nav-hover" data-plugin-options='{"nav":true}'>
+											<div>
+								<div class="img-thumbnail">
+						<img width="1162" height="450" src="https://mmi.edu.pk/wp-content/uploads/2023/07/Common-Heart-Conditions.jpg" class="owl-lazy img-responsive" alt="Common-Heart-Conditions" decoding="async" fetchpriority="high" srcset="https://mmi.edu.pk/wp-content/uploads/2023/07/Common-Heart-Conditions.jpg 1162w, https://mmi.edu.pk/wp-content/uploads/2023/07/Common-Heart-Conditions-1024x397.jpg 1024w, https://mmi.edu.pk/wp-content/uploads/2023/07/Common-Heart-Conditions-768x297.jpg 768w, https://mmi.edu.pk/wp-content/uploads/2023/07/Common-Heart-Conditions-640x248.jpg 640w, https://mmi.edu.pk/wp-content/uploads/2023/07/Common-Heart-Conditions-400x155.jpg 400w, https://mmi.edu.pk/wp-content/uploads/2023/07/Common-Heart-Conditions-600x232.jpg 600w" sizes="(max-width: 1162px) 100vw, 1162px" />													<span class="zoom" data-src="https://mmi.edu.pk/wp-content/uploads/2023/07/Common-Heart-Conditions.jpg" data-title=""><i class="fas fa-search"></i></span>
+											</div>
+								</div>
+								</div>
+		
+			</div>
+	
+			<div class="post-date">
+			<span class="day">03</span><span class="month">Jul</span><time datetime="2023-07-03">July 3, 2023</time>		</div>
+	
+	<div class="post-content">
+					<h2 class="entry-title">Common Heart Conditions Diagnosed by Cardiologists</h2>
+				<span class="vcard" style="display: none;"><span class="fn"><a href="https://mmi.edu.pk/author/ovaishassan/" title="Posts by Ovais Hassan" rel="author">Ovais Hassan</a></span></span><span class="updated" style="display:none">2023-07-03T18:13:15+05:00</span>
+<div class="post-meta ">
+				
+	
+	</div>
+
+		<div class="entry-content">
+			<p>When it comes to the heart, seeking the expertise of the top cardiologists in Karachi is essential for accurate diagnosis and effective treatment. In a bustling city like Karachi, Pakistan, where heart conditions are prevalent, having access to skilled <a href="https://mmi.edu.pk/cardiologist-in-karachi/">cardiologists and a specialized cardiology hospital in Karachi</a> is paramount.</p>
+<p>Numerous heart conditions can disrupt normal heart function, leading to potentially severe health complications. In this article, we will explore some of the most common heart conditions diagnosed by cardiologists, shedding light on their symptoms, causes, diagnosis, and treatment options. Additionally, we will discuss the availability of top cardiologists in Karachi and highlight prominent cardiology hospitals in the city.</p>
+<h2>1. Coronary Artery Disease (CAD)</h2>
+<p>Coronary artery disease develops when the arteries that feed blood to the heart narrow or get clogged owing to plaque formation. This condition can lead to chest pain (angina), heart attacks, or even heart failure. Cardiologists employ various diagnostic methods, such as stress tests, angiograms, and cardiac catheterization, to detect CAD. Treatment may involve lifestyle changes, medication, angioplasty, or bypass surgery.</p>
+<h2>2. Arrhythmias</h2>
+<p>Arrhythmias refer to abnormal heart rhythms, which can be either too fast (tachycardia) or too slow (bradycardia). Cardiologists use electrocardiograms (ECGs) and Holter monitors to diagnose arrhythmias. Medications, electrical cardioversion, implantable devices (pacemakers/defibrillators), and ablation procedures are some of the treatment options available for arrhythmias.</p>
+<h2>3. Heart Failure</h2>
+<p>Heart failure happens when the heart is unable to pump blood properly. This can be caused by underlying conditions such as coronary artery disease, high blood pressure, or heart valve problems. Cardiologists diagnose heart failure through physical examinations, imaging tests (echocardiography), and blood tests. Treatment includes medications, lifestyle changes, and, in severe cases, surgery or heart transplantation.</p>
+<h2>4. Valvular Heart Disease</h2>
+<p>This condition affects the heart valves, which regulate blood flow within the heart chambers. Common valve problems include stenosis (narrowing) and regurgitation (leaking). Cardiologists diagnose valvular heart disease using echocardiography, cardiac catheterization, and other imaging techniques. Treatment options may involve medication, valve repair, or valve replacement surgery.</p>
+<h2>5. Cardiomyopathy</h2>
+<p>Cardiomyopathy is a group of diseases that affect the heart muscle, making it harder for the heart to pump blood efficiently causing heart failure or arrhythmias. Cardiologists diagnose cardiomyopathy through physical examinations, imaging tests (echocardiography), and genetic testing in some cases. Treatment may include medications, implantable devices, or, in severe cases, heart transplantation.</p>
+<h2>6. Congenital Heart Defects</h2>
+<p>These are structural abnormalities present at birth, affecting the heart&#8217;s structure or how it functions. The severity of these illnesses varies. Cardiologists employ various diagnostic methods, including echocardiograms and cardiac catheterization, to identify congenital heart defects. Treatment options vary depending on the specific defect and may include medication, surgery, or interventional procedures.</p>
+<h2>7. Atherosclerosis</h2>
+<p>This condition is characterized by the buildup of fatty deposits (plaques) in the arteries, restricting blood flow. If these plaques rupture, they can cause a blood clot, leading to heart attacks or strokes. Cardiologists use imaging tests such as angiograms and computed tomography (CT) scans to diagnose atherosclerosis. Treatment involves lifestyle changes, medication, and procedures like angioplasty or stent placement.</p>
+<p>MMI Cardio Hospital, Karachi boasts top-notch cardiologists and state-of-the-art amenities tailored to meet your specific requirements.</p>
+<h2>8. Hypertension (High Blood Pressure)</h2>
+<p>High blood pressure is a common condition that can strain the heart and blood vessels, potentially leading to heart disease or stroke. Cardiologists diagnose hypertension through repeated blood pressure measurements. Treatment involves lifestyle modifications and medication to lower blood pressure levels and reduce the risk of complications.</p>
+<p>Cardiologists play a vital role in diagnosing and managing various heart conditions. From coronary artery disease to congenital heart defects, these specialists employ a range of diagnostic techniques to provide accurate assessments. Early detection and appropriate treatment of these common heart conditions are crucial for improving patient outcomes and reducing the risk of complications.</p>
+<p>If you experience any symptoms or have concerns about your heart health, consulting a cardiologist at MMI cardiac hospital, Karachi can provide valuable insights and help maintain a healthy heart for a better quality of life.</p>
+<div class='heateor_sss_sharing_container heateor_sss_vertical_sharing heateor_sss_bottom_sharing' style='width:44px;left: -10px;top: 400px;-webkit-box-shadow:none;box-shadow:none;' data-heateor-sss-href='https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/'><div class="heateor_sss_sharing_ul"><a class="heateor_sss_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmmi.edu.pk%2Fblog%2Fcommon-heart-conditions-diagnosed-by-cardiologists%2F" title="Facebook" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#3c589a;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-5 -5 42 42"><path d="M17.78 27.5V17.008h3.522l.527-4.09h-4.05v-2.61c0-1.182.33-1.99 2.023-1.99h2.166V4.66c-.375-.05-1.66-.16-3.155-.16-3.123 0-5.26 1.905-5.26 5.405v3.016h-3.53v4.09h3.53V27.5h4.223z" fill="#fff"></path></svg></span></a><a class="heateor_sss_whatsapp" href="https://api.whatsapp.com/send?text=Common%20Heart%20Conditions%20Diagnosed%20by%20Cardiologists https%3A%2F%2Fmmi.edu.pk%2Fblog%2Fcommon-heart-conditions-diagnosed-by-cardiologists%2F" title="Whatsapp" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#55eb4c;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-6 -5 40 40"><path class="heateor_sss_svg_stroke heateor_sss_no_fill" stroke="#fff" stroke-width="2" fill="none" d="M 11.579798566743314 24.396926207859085 A 10 10 0 1 0 6.808479557110079 20.73576436351046"></path><path d="M 7 19 l -1 6 l 6 -1" class="heateor_sss_no_fill heateor_sss_svg_stroke" stroke="#fff" stroke-width="2" fill="none"></path><path d="M 10 10 q -1 8 8 11 c 5 -1 0 -6 -1 -3 q -4 -3 -5 -5 c 4 -2 -1 -5 -1 -4" fill="#fff"></path></svg></span></a><a class="heateor_sss_button_twitter" href="https://twitter.com/intent/tweet?text=Common%20Heart%20Conditions%20Diagnosed%20by%20Cardiologists&url=https%3A%2F%2Fmmi.edu.pk%2Fblog%2Fcommon-heart-conditions-diagnosed-by-cardiologists%2F" title="Twitter" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_twitter" style="background-color:#55acee;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-4 -4 39 39"><path d="M28 8.557a9.913 9.913 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.738 9.738 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.942 4.942 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a4.968 4.968 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174-.318 0-.626-.03-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.893 9.893 0 0 1-6.114 2.107c-.398 0-.79-.023-1.175-.068a13.953 13.953 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013 0-.213-.005-.426-.015-.637.96-.695 1.795-1.56 2.455-2.55z" fill="#fff"></path></svg></span></a><a class="heateor_sss_button_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmmi.edu.pk%2Fblog%2Fcommon-heart-conditions-diagnosed-by-cardiologists%2F&title=Common%20Heart%20Conditions%20Diagnosed%20by%20Cardiologists" title="Linkedin" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_linkedin" style="background-color:#0077b5;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path d="M6.227 12.61h4.19v13.48h-4.19V12.61zm2.095-6.7a2.43 2.43 0 0 1 0 4.86c-1.344 0-2.428-1.09-2.428-2.43s1.084-2.43 2.428-2.43m4.72 6.7h4.02v1.84h.058c.56-1.058 1.927-2.176 3.965-2.176 4.238 0 5.02 2.792 5.02 6.42v7.395h-4.183v-6.56c0-1.564-.03-3.574-2.178-3.574-2.18 0-2.514 1.7-2.514 3.46v6.668h-4.187V12.61z" fill="#fff"></path></svg></span></a><a class="heateor_sss_button_copy_link" title="Copy Link" rel="nofollow noopener" href="https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/" onclick="event.preventDefault()" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_copy_link" style="background-color:#ffc112;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-4 -4 40 40"><path fill="#fff" d="M24.412 21.177c0-.36-.126-.665-.377-.917l-2.804-2.804a1.235 1.235 0 0 0-.913-.378c-.377 0-.7.144-.97.43.026.028.11.11.255.25.144.14.24.236.29.29s.117.14.2.256c.087.117.146.232.177.344.03.112.046.236.046.37 0 .36-.126.666-.377.918a1.25 1.25 0 0 1-.918.377 1.4 1.4 0 0 1-.373-.047 1.062 1.062 0 0 1-.345-.175 2.268 2.268 0 0 1-.256-.2 6.815 6.815 0 0 1-.29-.29c-.14-.142-.223-.23-.25-.254-.297.28-.445.607-.445.984 0 .36.126.664.377.916l2.778 2.79c.243.243.548.364.917.364.36 0 .665-.118.917-.35l1.982-1.97c.252-.25.378-.55.378-.9zm-9.477-9.504c0-.36-.126-.665-.377-.917l-2.777-2.79a1.235 1.235 0 0 0-.913-.378c-.35 0-.656.12-.917.364L7.967 9.92c-.254.252-.38.553-.38.903 0 .36.126.665.38.917l2.802 2.804c.242.243.547.364.916.364.377 0 .7-.14.97-.418-.026-.027-.11-.11-.255-.25s-.24-.235-.29-.29a2.675 2.675 0 0 1-.2-.255 1.052 1.052 0 0 1-.176-.344 1.396 1.396 0 0 1-.047-.37c0-.36.126-.662.377-.914.252-.252.557-.377.917-.377.136 0 .26.015.37.046.114.03.23.09.346.175.117.085.202.153.256.2.054.05.15.148.29.29.14.146.222.23.25.258.294-.278.442-.606.442-.983zM27 21.177c0 1.078-.382 1.99-1.146 2.736l-1.982 1.968c-.745.75-1.658 1.12-2.736 1.12-1.087 0-2.004-.38-2.75-1.143l-2.777-2.79c-.75-.747-1.12-1.66-1.12-2.737 0-1.106.392-2.046 1.183-2.818l-1.186-1.185c-.774.79-1.708 1.186-2.805 1.186-1.078 0-1.995-.376-2.75-1.13l-2.803-2.81C5.377 12.82 5 11.903 5 10.826c0-1.08.382-1.993 1.146-2.738L8.128 6.12C8.873 5.372 9.785 5 10.864 5c1.087 0 2.004.382 2.75 1.146l2.777 2.79c.75.747 1.12 1.66 1.12 2.737 0 1.105-.392 2.045-1.183 2.817l1.186 1.186c.774-.79 1.708-1.186 2.805-1.186 1.078 0 1.995.377 2.75 1.132l2.804 2.804c.754.755 1.13 1.672 1.13 2.75z"/></svg></span></a></div><div class="heateorSssClear"></div></div>		</div>
+
+		
+	</div>
+
+	<div class="post-gap"></div>
+
+					<div class="post-share post-block">
+					<h3><i class="fas fa-share"></i>Share this post</h3>
+							<div class="share-links"><a href="https://www.facebook.com/sharer.php?u=https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/" target="_blank"  rel="noopener noreferrer nofollow" data-bs-tooltip data-bs-placement='bottom' title="Facebook" class="share-facebook">Facebook</a>
+		<a href="https://twitter.com/intent/tweet?text=Common+Heart+Conditions+Diagnosed+by+Cardiologists&amp;url=https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/" target="_blank"  rel="noopener noreferrer nofollow" data-bs-tooltip data-bs-placement='bottom' title="Twitter" class="share-twitter">Twitter</a>
+		<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/&amp;title=Common+Heart+Conditions+Diagnosed+by+Cardiologists" target="_blank"  rel="noopener noreferrer nofollow" data-bs-tooltip data-bs-placement='bottom' title="LinkedIn" class="share-linkedin">LinkedIn</a>
+		<a href="https://plus.google.com/share?url=https://mmi.edu.pk/blog/common-heart-conditions-diagnosed-by-cardiologists/" target="_blank"  rel="noopener noreferrer nofollow" data-bs-tooltip data-bs-placement='bottom' title="Google +" class="share-googleplus">Google +</a>
+		<a href="/cdn-cgi/l/email-protection#ccf3bfb9aea6a9afb8f18fa3a1a1a3a2e784a9adbeb8e78fa3a2a8a5b8a5a3a2bfe788a5adaba2a3bfa9a8e7aeb5e78fadbea8a5a3a0a3aba5bfb8bfeaada1bcf7aea3a8b5f1a4b8b8bcbff6e3e3a1a1a5e2a9a8b9e2bca7e3aea0a3abe3afa3a1a1a3a2e1a4a9adbeb8e1afa3a2a8a5b8a5a3a2bfe1a8a5adaba2a3bfa9a8e1aeb5e1afadbea8a5a3a0a3aba5bfb8bfe3" target="_blank" rel="noopener noreferrer nofollow" data-bs-tooltip data-bs-placement='bottom' title="Email" class="share-email">Email</a>
+	</div>			</div>
+		
+	
+
+	
+</article>
+
+			</div>
+
+
+
+		
+
+</div><!-- end main content -->
+
+	<div class="col-lg-3 sidebar porto-blog-sidebar right-sidebar"><!-- main sidebar -->
+						<div class="sidebar-content">
+						<aside id="block-7" class="widget widget_block"><div class="w-100">
+<a href="https://mmi.edu.pk/find-a-doctor/" class="">
+<img decoding="async" src="/wp-content/uploads/2023/01/bookappointment.png"></a>
+</div></aside><aside id="text-4" class="widget widget_text">			<div class="textwidget"><div style="border: 1px solid #cacaca; border-radius: 4px; padding: 10px;">
+<p><img decoding="async" class="size-full wp-image-677 aligncenter" src="https://mmi.edu.pk/wp-content/uploads/2019/11/subscribe.png" alt="" width="81" height="68" /></p>
+<h3 style="color: #1d4886; font-size: 20px; text-align: center;">Subscribe to Newsletters</h3>
+<p style="text-align: center;">
+<div class="wpcf7 no-js" id="wpcf7-f328-p55368-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/blog/common-heart-conditions-diagnosed-by-cardiologists/#wpcf7-f328-p55368-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="328" />
+<input type="hidden" name="_wpcf7_version" value="5.7.7" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f328-p55368-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="55368" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+<input type="hidden" name="_wpcf7cf_hidden_group_fields" value="[]" />
+<input type="hidden" name="_wpcf7cf_hidden_groups" value="[]" />
+<input type="hidden" name="_wpcf7cf_visible_groups" value="[]" />
+<input type="hidden" name="_wpcf7cf_repeaters" value="[]" />
+<input type="hidden" name="_wpcf7cf_steps" value="{}" />
+<input type="hidden" name="_wpcf7cf_options" value="{&quot;form_id&quot;:328,&quot;conditions&quot;:[],&quot;settings&quot;:{&quot;animation&quot;:&quot;yes&quot;,&quot;animation_intime&quot;:200,&quot;animation_outtime&quot;:200,&quot;conditions_ui&quot;:&quot;normal&quot;,&quot;notice_dismissed&quot;:false,&quot;notice_dismissed_rollback-cf7-5.3.2&quot;:true}}" />
+<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</div>
+<divclass="form-group"><span class="wpcf7-form-control-wrap" data-name="email-add"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Enter your email" value="" type="email" name="email-add" /></span></div><div><input class="wpcf7-form-control has-spinner wpcf7-submit newsletter-btn" type="submit" value="Subscribe" /></div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+</p>
+</div>
+</div>
+		</aside><aside id="block-6" class="widget widget_block">
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex"></div>
+</aside>		</div>
+					</div><!-- end main sidebar -->
+
+
+	</div>
+	</div>
+
+
+		
+			
+			</div><!-- end main -->
+
+			
+			<div class="footer-wrapper">
+
+				
+								
+				<div id="footer" class="footer footer-1"
+>
+			<div class="footer-main">
+			<div class="container">
+				
+									<div class="row">
+														<div class="col-lg-3">
+									<aside id="nav_menu-4" class="widget widget_nav_menu"><h3 class="widget-title">For Health Professionals</h3><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-694"><a href="https://mmi.edu.pk/career/">Careers</a></li>
+<li id="menu-item-5731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5731"><a href="https://mmi.edu.pk/college-of-nursing/">Memon College of Nursing</a></li>
+<li id="menu-item-636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-636"><a href="https://mmi.edu.pk/contact-us/">Contact Us</a></li>
+<li id="menu-item-5732" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5732"><a href="https://mmi.edu.pk/reports-and-newsletters/">Annual Reports and Newsletters</a></li>
+<li id="menu-item-5733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5733"><a href="https://mmi.edu.pk/about/">About Us</a></li>
+</ul></div></aside>								</div>
+																<div class="col-lg-3">
+									<aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title">For Hospital Visitors</h3><div class="menu-footer-menu-2-container"><ul id="menu-footer-menu-2" class="menu"><li id="menu-item-5724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5724"><a href="https://mmi.edu.pk/find-a-doctor/">Doctors</a></li>
+<li id="menu-item-5725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5725"><a href="https://mmi.edu.pk/our-specialties/">Our Specialties</a></li>
+<li id="menu-item-5726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5726"><a href="https://mmi.edu.pk/services/">Services</a></li>
+<li id="menu-item-5727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5727"><a href="https://mmi.edu.pk/online-consultation/">Teleclinics</a></li>
+<li id="menu-item-5728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5728"><a href="https://mmi.edu.pk/mmi-medical-laboratories/">MMI Hospital Clinical Laboratory</a></li>
+<li id="menu-item-23514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23514"><a href="https://mmi.edu.pk/blog/">Blog</a></li>
+<li id="menu-item-6151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6151"><a href="https://mmi.edu.pk/patient-rights/">Patient’s Rights</a></li>
+<li id="menu-item-6217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6217"><a href="https://mmi.edu.pk/feedback/">Feedback</a></li>
+</ul></div></aside>								</div>
+																<div class="col-lg-3">
+									<aside id="block-2" class="widget widget_block"><p>Address:<br>
+Hyder Buksh Gabol Road,<br>
+Safoora Chowrangi,  Karachi, Pakistan.</p>
+<p>Phone:<br> 
+<a href="tel:021111664664">021-111-MMI-MMI <br> 
+021-111-664-664</a>
+</p>
+<p>Email: <a href="/cdn-cgi/l/email-protection#650c0b030a2508080c4b0001104b150e"><span class="__cf_email__" data-cfemail="80e9eee6efc0edede9aee5e4f5aef0eb">[email&#160;protected]</span></a></p>
+<p style="font-size: 2em;"><a <a="" href="https://www.facebook.com/MMIHospital" target="_blank" style="padding-right: 10px;"><i class="fa-brands fa-square-facebook"></i></a><a href="https://www.instagram.com/mmihospitalins/" target="_blank" style="padding-right: 10px;"><i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/channel/UCYmcc5-pMLl-eVxuvS0v_2A" target="_blank" style="padding-right: 10px;"><i class="fa-brands fa-youtube"></i></a></p></aside>								</div>
+																<div class="col-lg-3">
+									<aside id="block-3" class="widget widget_block"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.6025456023012!2d67.14418615025707!3d24.945606347905454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3386342271637%3A0x14569da3ac00a17b!2sMemon%20Medical%20Institute%20Hospital!5e0!3m2!1sen!2s!4v1645944166875!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></aside>								</div>
+													</div>
+				
+							</div>
+		</div>
+	
+	<div class="footer-bottom">
+	<div class="container">
+		
+					<div class="footer-center">
+								<span class="footer-copyright">© Copyright 2022. All Rights Reserved.</span>			</div>
+		
+			</div>
+</div>
+</div>
+				
+				
+			</div>
+					
+		
+	</div><!-- end wrapper -->
+	
+<div class="panel-overlay"></div>
+<div id="side-nav-panel" class="panel-right">
+	<a href="#" aria-label="Mobile Close" class="side-nav-panel-close"><i class="fas fa-times"></i></a>
+	<div class="mobile-tabs"><ul class="mobile-tab-items nav nav-fill nav-tabs"><li class="mobile-tab-item nav-item active" pane-id="menu-main">Main Menu</li><li class="mobile-tab-item nav-item" pane-id="menu-navigation">Top Navigation</li></ul><div class="mobile-tab-content"><div class="menu-wrap tab-pane active" tab-id="menu-main"><ul id="menu-home-1" class="mobile-menu accordion-menu"><li id="accordion-menu-item-827" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="#">About</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-828" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/about/">About Us</a></li>
+	<li id="accordion-menu-item-3930" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/mission-vision-core-values/">Mission, Vision &#038; Aim</a></li>
+	<li id="accordion-menu-item-6016" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/ceos-message/">CEO’s Message</a></li>
+	<li id="accordion-menu-item-3932" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/board-of-governors/">Board of Governors</a></li>
+	<li id="accordion-menu-item-3933" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/office-bearers/">Office Bearers</a></li>
+	<li id="accordion-menu-item-3934" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/executive-management-committee/">Executive Management Committee</a></li>
+	<li id="accordion-menu-item-3935" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/trustees-memon-health-and-education-foundation/">Trustees Memon Health and Education Foundation</a></li>
+	<li id="accordion-menu-item-830" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/friends/">Friends</a></li>
+	<li id="accordion-menu-item-3947" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/future-projects/">Future Projects</a></li>
+	<li id="accordion-menu-item-5776" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/welfare-department/">Welfare Department</a></li>
+	<li id="accordion-menu-item-6150" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/patient-rights/">Patient’s Rights</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-3937" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="#">Facilities</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-43969" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/community-health/antenatal-care-program/">Antenatal Care Program</a></li>
+	<li id="accordion-menu-item-3936" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/services/">Services</a></li>
+	<li id="accordion-menu-item-5374" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/our-specialties/">Specialties</a></li>
+	<li id="accordion-menu-item-5202" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/mmi-medical-laboratories/">MMI Hospital Clinical Laboratory</a></li>
+	<li id="accordion-menu-item-19599" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/services/radiology/">Radiology</a></li>
+	<li id="accordion-menu-item-5203" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="http://reports.mmi.edu.pk/">Online Lab/Radiology Report</a></li>
+	<li id="accordion-menu-item-5768" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/lab-collection-points/">Lab Collection Points/Outreach Centers</a></li>
+	<li id="accordion-menu-item-6218" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/feedback/">Give your Feedback</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-3949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="#">Latest</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-19453" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/blog/">Blog</a></li>
+	<li id="accordion-menu-item-5780" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/corona-virus-our-safety-measures/">Corona Virus &#038; Our Safety Measures</a></li>
+	<li id="accordion-menu-item-6231" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/resources-patient-success-stories/">Patient Success Stories</a></li>
+	<li id="accordion-menu-item-5805" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/health-awareness/">Health Awareness</a></li>
+	<li id="accordion-menu-item-831" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/news-events/">News &#038; Events</a></li>
+	<li id="accordion-menu-item-4980" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/gallery/">Gallery</a></li>
+	<li id="accordion-menu-item-5574" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/videos/">Videos</a></li>
+	<li id="accordion-menu-item-832" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/reports-and-newsletters/">Annual Reports and Newsletters</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-sub"><a href="https://mmi.edu.pk/find-a-doctor/">Doctors</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-19455" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/find-a-doctor/">In-person Appointment</a></li>
+	<li id="accordion-menu-item-5738" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/services/online-doctor/">Online Doctor</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-5801" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="#">Colleges</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-11995" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://mcon.mmi.edu.pk/">Memon College of Nursing</a></li>
+	<li id="accordion-menu-item-8925" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://mcprm.mmi.edu.pk">Memon College of Physical &#038; Rehabilitative Medicine</a></li>
+	<li id="accordion-menu-item-5988" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/residence-program/">Residency Program</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-4334" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://mmi.edu.pk/career/">Careers</a></li>
+<li id="accordion-menu-item-804" class="donate-btn aaa menu-item menu-item-type-custom menu-item-object-custom"><a href="https://mmi.edu.pk/donate/">Donate</a></li>
+</ul></div></div></div></div>
+
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		  <!--<div id="wcplpro_added_to_cart_notification" class="autoclose" style="display: none;">
+    <a href="https://mmi.edu.pk" title="Go to cart"><span></span>  &rarr;</a> <a href="#" class="slideup_panel">&times;</a>
+  </div>-->
+  <!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://mmi.edu.pk/wp-admin/admin-ajax.php";
+</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script type='text/javascript' src='https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js'></script>
+        <style>
+        .loader_slh {
+            display: none;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('https://mmi.edu.pk/wp-content/themes/porto/images/loading.gif') 50% 50% no-repeat rgba(249, 249, 249, 0.57);
+            /*text-indent:-9999px;*/
+
+        }
+    </style>
+    <script>
+        jQuery('<div class="loader_slh">loading</div>').prependTo('body');
+        jQuery(window).load(function () {
+            //jQuery(".loader_slh").fadeOut("slow");
+        })
+    </script>
+    	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='rs-plugin-settings-css' href='https://mmi.edu.pk/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.12' media='all' />
+<style id='rs-plugin-settings-inline-css'>
+#rs-demo-id {}
+</style>
+<script src="https://mmi.edu.pk/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7" id="swv-js"></script>
+<script id="contact-form-7-js-extra">
+var wpcf7 = {"api":{"root":"https:\/\/mmi.edu.pk\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7" id="contact-form-7-js"></script>
+<script id="alg-wc-pop-frontend-js-extra">
+var alg_wc_pop_data_object = {"force_decimals":"","force_decimal_width":"2"};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/product-open-pricing-for-woocommerce-pro/includes/js/alg-wc-pop-frontend.js?ver=1.7.0" id="alg-wc-pop-frontend-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.12" defer async id="tp-tools-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.12" defer async id="revmin-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.6.0" id="jquery-blockui-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.7.6.0" id="js-cookie-js"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.6.0" id="woocommerce-js"></script>
+<script id="wc-cart-fragments-js-extra">
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_d632570cf1096476a223ea2f25262744","fragment_name":"wc_fragments_d632570cf1096476a223ea2f25262744","request_timeout":"5000"};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=7.6.0" id="wc-cart-fragments-js"></script>
+<script id="heateor_sss_sharing_js-js-before">
+function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = 'https://mmi.edu.pk/wp-admin/admin-ajax.php', heateorSssCloseIconPath = 'https://mmi.edu.pk/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = 'https://mmi.edu.pk/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 1;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")}
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js?ver=3.3.51" id="heateor_sss_sharing_js-js"></script>
+<script id="wpcf7cf-scripts-js-extra">
+var wpcf7cf_global_settings = {"ajaxurl":"https:\/\/mmi.edu.pk\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=2.3.9" id="wpcf7cf-scripts-js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lf8tGQaAAAAAH7tlpJbACkQSFbjN-kLa_U4s0YK&amp;ver=3.0" id="google-recaptcha-js"></script>
+<script src="https://mmi.edu.pk/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script id="wpcf7-recaptcha-js-extra">
+var wpcf7_recaptcha = {"sitekey":"6Lf8tGQaAAAAAH7tlpJbACkQSFbjN-kLa_U4s0YK","actions":{"homepage":"homepage","contactform":"contactform"}};
+</script>
+<script src="https://mmi.edu.pk/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.7.7" id="wpcf7-recaptcha-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=14.1.6.1" id="__ytprefsfitvids__-js"></script>
+<script src="https://mmi.edu.pk/wp-content/themes/porto-child/js/custom.js?ver=829" id="mmicsutom-js"></script>
+<script src="https://mmi.edu.pk/wp-includes/js/comment-reply.min.js?ver=6.6.1" id="comment-reply-js" async data-wp-strategy="async"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.10.0" id="wpb_composer_front_js-js"></script>
+<script src="https://mmi.edu.pk/wp-content/themes/porto/js/bootstrap.js?ver=5.0.1" id="bootstrap-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1-wc.7.6.0" id="jquery-cookie-js"></script>
+<script src="https://mmi.edu.pk/wp-content/themes/porto/js/libs/owl.carousel.min.js?ver=2.3.4" id="owl.carousel-js"></script>
+<script src="https://mmi.edu.pk/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script async="async" src="https://mmi.edu.pk/wp-content/themes/porto/js/libs/jquery.magnific-popup.min.js?ver=1.1.0" id="jquery-magnific-popup-js"></script>
+<script id="porto-theme-js-extra">
+var js_porto_vars = {"rtl":"","theme_url":"https:\/\/mmi.edu.pk\/wp-content\/themes\/porto-child","ajax_url":"https:\/\/mmi.edu.pk\/wp-admin\/admin-ajax.php","change_logo":"","container_width":"1140","grid_gutter_width":"30","show_sticky_header":"1","show_sticky_header_tablet":"1","show_sticky_header_mobile":"1","ajax_loader_url":"\/\/mmi.edu.pk\/wp-content\/themes\/porto\/images\/ajax-loader@2x.gif","category_ajax":"","compare_popup":"","compare_popup_title":"","prdctfltr_ajax":"","slider_loop":"1","slider_autoplay":"1","slider_autoheight":"1","slider_speed":"5000","slider_nav":"","slider_nav_hover":"1","slider_margin":"","slider_dots":"1","slider_animatein":"","slider_animateout":"fadeOut","product_thumbs_count":"4","product_zoom":"0","product_zoom_mobile":"1","product_image_popup":"0","zoom_type":"inner","zoom_scroll":"1","zoom_lens_size":"200","zoom_lens_shape":"square","zoom_contain_lens":"1","zoom_lens_border":"1","zoom_border_color":"#888888","zoom_border":"0","screen_lg":"1170","mfp_counter":"%curr% of %total%","mfp_img_error":"<a href=\"%url%\">The image<\/a> could not be loaded.","mfp_ajax_error":"<a href=\"%url%\">The content<\/a> could not be loaded.","popup_close":"Close","popup_prev":"Previous","popup_next":"Next","request_error":"The requested content cannot be loaded.<br\/>Please try again later.","loader_text":"Loading...","submenu_back":"Back","porto_nonce":"424f54814f","use_skeleton_screen":[],"user_edit_pages":"","quick_access":"Click to edit this element.","goto_type":"Go To the Type Builder.","legacy_mode":"1"};
+</script>
+<script src="https://mmi.edu.pk/wp-content/themes/porto/js/theme.js?ver=6.8.5" id="porto-theme-js"></script>
+<script async="async" src="https://mmi.edu.pk/wp-content/themes/porto/js/theme-async.js?ver=6.8.5" id="porto-theme-async-js"></script>
+<script src="https://mmi.edu.pk/wp-content/themes/porto/js/woocommerce-theme.js?ver=6.8.5" id="porto-woocommerce-theme-js"></script>
+<script src="https://mmi.edu.pk/wp-content/plugins/easy-testimonials/include/assets/js/jquery.cycle2.min.js?ver=6.6.1" id="gp_cycle2-js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"48a86682d3","applicationID":"472993573","transactionName":"M1ZXYRFQC0UHVBBYVwocdFYXWApYSUQNX18IVg==","queueTime":0,"applicationTime":828,"atts":"HxFUF1lKGEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
