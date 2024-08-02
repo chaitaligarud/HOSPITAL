@@ -14,7 +14,7 @@
          box-shadow:3px 3px 10px 10px rgb(138,136,136) ;
 }.container2
 {
-        background-color:honeydew;
+        background-color:;
          border:1px solid rgba(255, 255, 255, 0.788);
         border-radius:0px 0px 0px 0px;
          margin-left:50;
@@ -216,4 +216,17 @@ margin:2px;
     border-radius:100px;
    width:100px;
 
+}
+.container6
+{
+        background-color:honeydew;
+         border:1px solid rgba(255, 255, 255, 0.788);
+        border-radius:0px 0px 0px 0px;
+        padding:10px 5px 10px 5px;
+         height:1000px;
+         width:1500px;
+         display: flex;
+         flex-direction: row;
+        
+        
 }
